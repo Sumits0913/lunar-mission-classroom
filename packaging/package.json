@@ -1,0 +1,43 @@
+{
+  "name": "lunar-mission-classroom",
+  "version": "4.0.0",
+  "description": "中国载人登月任务互动课堂 V4 - 课堂独立运行版",
+  "main": "main.js",
+  "author": "航天科普课堂",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "cn.cstm.lunarmission.classroom.v4",
+    "productName": "中国载人登月任务互动课堂 V4",
+    "copyright": "Copyright © 2026",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "app/**/*",
+      "build/icon.ico"
+    ],
+    "win": {
+      "target": {
+        "target": "portable",
+        "arch": [
+          "x64"
+        ]
+      },
+      "icon": "build/icon.ico",
+      "artifactName": "LunarMissionClassroom-V4.exe"
+    },
+    "portable": {},
+    "asar": true,
+    "compression": "maximum"
+  },
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^25.1.8"
+  }
+}

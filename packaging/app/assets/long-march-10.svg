@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 760" role="img" aria-label="长征十号登月构型科普示意图">
+  <defs>
+    <linearGradient id="cz10-white" x1="0" x2="1"><stop stop-color="#65727b"/><stop offset=".22" stop-color="#dce4e8"/><stop offset=".5" stop-color="#fff"/><stop offset=".8" stop-color="#b4c0c6"/><stop offset="1" stop-color="#56636c"/></linearGradient>
+    <linearGradient id="cz10-dark" x1="0" x2="1"><stop stop-color="#151d24"/><stop offset=".5" stop-color="#58646d"/><stop offset="1" stop-color="#111820"/></linearGradient>
+  </defs>
+  <g stroke="#172530" stroke-opacity=".5" stroke-width="2">
+    <!-- 中央芯级与上面级：登月型长征十号为三级火箭 -->
+    <path d="M140 12C113 36 102 64 101 103h78c-1-39-12-67-39-91z" fill="url(#cz10-white)"/>
+    <path d="M101 102h78v414h-78z" fill="url(#cz10-white)"/>
+    <path d="M101 185h78v31h-78zM101 340h78v38h-78z" fill="url(#cz10-dark)"/>
+    <path d="M89 516h102l-9 108H98z" fill="url(#cz10-white)"/>
+    <path d="M98 624h84l14 47H84z" fill="url(#cz10-dark)"/>
+    <!-- 两枚通用芯级助推器：与中央芯一级并联 -->
+    <path d="M50 116C30 139 25 171 25 207v385l20 42 35-27V198c0-40-9-67-30-82z" fill="url(#cz10-white)"/>
+    <path d="M230 116c20 23 25 55 25 91v385l-20 42-35-27V198c0-40 9-67 30-82z" fill="url(#cz10-white)"/>
+    <path d="M25 350h55v36H25zM200 350h55v36h-55z" fill="url(#cz10-dark)"/>
+    <path d="M25 560h55v48H25zM200 560h55v48h-55z" fill="url(#cz10-dark)"/>
+  </g>
+  <!-- 红色识别标记仅用于科普区分，不复刻最终涂装 -->
+  <g fill="#d9272e"><path d="M102 252h77v13h-77z"/><path d="M26 259h53v10H26zM201 259h53v10h-53z"/></g>
+  <text x="140" y="307" fill="#c91f2b" font-size="20" font-family="Arial,sans-serif" font-weight="700" text-anchor="middle">CZ-10</text>
+  <text x="140" y="330" fill="#c91f2b" font-size="13" font-family="sans-serif" text-anchor="middle">长征十号</text>
+  <g fill="#263640"><circle cx="109" cy="674" r="12"/><circle cx="130" cy="678" r="13"/><circle cx="151" cy="678" r="13"/><circle cx="172" cy="674" r="12"/><circle cx="43" cy="637" r="11"/><circle cx="62" cy="641" r="11"/><circle cx="218" cy="641" r="11"/><circle cx="237" cy="637" r="11"/></g>
+</svg>

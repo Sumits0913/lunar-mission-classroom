@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>中国载人登月任务互动课堂 V4</title>
+  <link rel="stylesheet" href="assets/classroom.css">
+  <script defer src="js/mission.js"></script>
+</head>
+<body class="mission-page">
+  <div class="science-disclaimer">工程科普示意 · 公开任务流程 + 标准轨道力学 · 尺度与时间经过压缩</div>
+  <main class="mission-shell" id="mission-app">
+    <header class="mission-topbar">
+      <a href="index.html" class="home-link">← 任务首页</a>
+      <div><strong>中国载人登月任务</strong><small id="level-name"></small></div>
+      <div class="top-actions">
+        <button type="button" id="pause-button" aria-pressed="false">暂停</button>
+        <button type="button" id="sound-button" aria-pressed="true">声音：开</button>
+      </div>
+    </header>
+    <section class="mission-screen intro-screen active" id="intro-screen">
+      <canvas id="intro-canvas" width="1000" height="500" aria-label="本关任务动态示意"></canvas>
+      <div class="intro-copy">
+        <span id="intro-kicker"></span>
+        <h1 id="intro-title"></h1>
+        <p id="intro-text"></p>
+        <button type="button" class="primary-button" id="start-button">进入飞控席</button>
+      </div>
+    </section>
+    <section class="mission-screen lesson-screen" id="lesson-screen">
+      <div class="lesson-layout">
+        <div class="lesson-main">
+          <div class="lesson-heading">
+            <div class="stage-number" id="stage-number">1</div>
+            <div><h2 id="stage-title"></h2><p id="stage-copy"></p></div>
+            <div class="stage-count" id="stage-count"></div>
+          </div>
+          <div class="scene-frame">
+            <canvas id="mission-canvas" width="1000" height="520" aria-label="航天任务物理动画"></canvas>
+            <div class="telemetry" id="telemetry"></div>
+            <div class="scene-caption" id="scene-caption" aria-live="polite"></div>
+            <div class="hint-bubble" id="hint-bubble" hidden></div>
+          </div>
+          <div class="physics-line"><strong>现在要理解：</strong><span id="physics-line"></span></div>
+          <div class="control-deck" id="control-deck"></div>
+          <div class="step-navigation" aria-label="步骤控制">
+            <button type="button" id="previous-step">← 上一步</button>
+            <button type="button" id="retry-step">↻ 重试本步</button>
+            <button type="button" id="show-hint">提示</button>
+          </div>
+        </div>
+        <aside class="mission-sidebar" aria-label="任务路线和步骤">
+          <section class="sidebar-block route-block">
+            <div class="sidebar-title"><span>任务路线</span><strong id="overall-count"></strong></div>
+            <ol class="mission-route" id="mission-route"></ol>
+          </section>
+          <section class="sidebar-block">
+            <div class="sidebar-title"><span>本关步骤</span><strong id="sidebar-stage-count"></strong></div>
+            <ol class="step-list" id="step-list"></ol>
+          </section>
+          <section class="sidebar-block clock-block">
+            <div><span>任务时标</span><strong id="mission-time">准备中</strong></div>
+            <div><span>本关用时</span><strong id="lesson-time">00:00</strong></div>
+          </section>
+          <section class="sidebar-block resource-block" id="resource-panel">
+            <div class="resource-head"><span id="resource-name">系统状态</span><strong id="resource-value">100%</strong></div>
+            <div class="resource-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" id="resource-track"><i id="resource-bar"></i></div>
+            <small id="resource-status">状态正常</small>
+          </section>
+        </aside>
+      </div>
+    </section>
+    <section class="mission-screen result-screen" id="result-screen">
+      <div class="result-orbit" aria-hidden="true"><i></i><b></b></div>
+      <div class="result-mark">✓</div>
+      <h2 id="result-title"></h2>
+      <p id="result-text"></p>
+      <div class="result-actions"><a class="primary-button" id="next-level" href="#">进入下一关</a><button type="button" class="secondary-button" id="again-button">再体验一次</button><a class="secondary-button" href="index.html">返回任务首页</a></div>
+    </section>
+  </main>
+</body>
+</html>

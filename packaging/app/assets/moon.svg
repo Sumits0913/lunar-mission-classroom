@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="base" cx="32%" cy="24%" r="76%"><stop stop-color="#f0f1ed"/><stop offset=".35" stop-color="#b8bbb6"/><stop offset=".72" stop-color="#747a78"/><stop offset="1" stop-color="#2c3437"/></radialGradient>
+    <radialGradient id="maria"><stop stop-color="#444b4d" stop-opacity=".8"/><stop offset="1" stop-color="#62686a" stop-opacity=".08"/></radialGradient>
+    <filter id="grain"><feTurbulence baseFrequency=".7" numOctaves="2" seed="13"/><feColorMatrix values=".5 0 0 0 .3 .5 0 0 0 .3 .5 0 0 0 .3 0 0 0 .18 0"/></filter>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="10"/></filter>
+    <clipPath id="disc"><circle cx="256" cy="256" r="210"/></clipPath>
+  </defs>
+  <circle cx="256" cy="256" r="221" fill="#c9e4ee" opacity=".18" filter="url(#glow)"/>
+  <g clip-path="url(#disc)">
+    <circle cx="256" cy="256" r="210" fill="url(#base)"/>
+    <ellipse cx="190" cy="178" rx="92" ry="66" fill="url(#maria)" transform="rotate(-18 190 178)"/>
+    <ellipse cx="322" cy="285" rx="85" ry="112" fill="url(#maria)" opacity=".62" transform="rotate(22 322 285)"/>
+    <ellipse cx="168" cy="346" rx="54" ry="36" fill="url(#maria)" opacity=".48"/>
+    <g fill="none" stroke="#5c6262" stroke-opacity=".55">
+      <circle cx="126" cy="242" r="34" stroke-width="8"/><circle cx="126" cy="242" r="23" stroke="#d8d9d4" stroke-opacity=".28" stroke-width="4"/>
+      <circle cx="329" cy="151" r="29" stroke-width="7"/><circle cx="329" cy="151" r="19" stroke="#e5e5df" stroke-opacity=".3" stroke-width="4"/>
+      <circle cx="367" cy="347" r="42" stroke-width="10"/><circle cx="367" cy="347" r="28" stroke="#e2e3dd" stroke-opacity=".25" stroke-width="4"/>
+      <circle cx="226" cy="391" r="22" stroke-width="6"/><circle cx="266" cy="232" r="17" stroke-width="5"/><circle cx="172" cy="117" r="16" stroke-width="5"/>
+    </g>
+    <circle cx="256" cy="256" r="210" filter="url(#grain)" opacity=".55"/>
+    <ellipse cx="184" cy="133" rx="63" ry="28" fill="#fff" opacity=".12" transform="rotate(-25 184 133)"/>
+  </g>
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#e8edf0" stroke-opacity=".56" stroke-width="3"/>
+</svg>

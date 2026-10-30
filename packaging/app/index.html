@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>中国载人登月任务互动课堂 V4</title>
+  <link rel="stylesheet" href="assets/classroom.css">
+</head>
+<body class="home-page">
+  <main class="home-shell">
+    <header class="home-header">
+      <h1>中国载人登月任务</h1>
+      <p>作为任务飞控工程师，沿着真实任务逻辑完成八个关键阶段。每一关只操作一个核心问题，画面同时展示轨道、速度、推力和相对运动。</p>
+      <div class="version-note">V4 互动课堂 · 支持步骤回退、任务路线和教师暂停讲解</div>
+      <div class="route-line" aria-label="任务流程"><span>发射</span><i></i><span>奔月</span><i></i><span>环月</span><i></i><span>登月</span><i></i><span>返回</span></div>
+    </header>
+    <section class="home-hero" aria-label="地球、月球与地月转移任务示意">
+      <div class="home-earth"></div>
+      <div class="home-moon"></div>
+      <svg viewBox="0 0 1000 330" aria-hidden="true">
+        <defs><marker id="hero-arrow-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#ffd36d"/></marker><marker id="hero-arrow-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#62dcff"/></marker></defs>
+        <path d="M190 204C390 50 675 50 846 150" fill="none" stroke="#ffd36d" stroke-width="3" stroke-dasharray="9 9" marker-end="url(#hero-arrow-a)"/>
+        <path d="M190 225C410 326 695 300 858 210" fill="none" stroke="#62dcff" stroke-width="3" stroke-dasharray="9 9" marker-end="url(#hero-arrow-b)"/>
+        <ellipse cx="870" cy="180" rx="92" ry="78" fill="none" stroke="#4ee39b" stroke-width="2" stroke-dasharray="7 8"/>
+      </svg>
+      <div class="home-hero-title">两次发射，各自奔月，在运动的月球附近会合</div>
+      <div class="home-scale-note">轨道关系按物理规律绘制；天体大小和距离为课堂压缩比例</div>
+    </section>
+    <section class="level-grid" aria-label="八个教学关卡">
+      <article><b>01</b><h2>双箭发射</h2><p>看懂独立发射、俯仰转弯、级间分离与入轨方向。</p><a href="mission.html?level=1">进入第一关</a></article>
+      <article><b>02</b><h2>地月转移</h2><p>沿近似椭圆转移轨道瞄准未来的月球位置。</p><a href="mission.html?level=2">进入第二关</a></article>
+      <article><b>03</b><h2>近月制动</h2><p>在近月点反向点火，从掠过轨迹变成捕获椭圆，再整轨。</p><a href="mission.html?level=3">进入第三关</a></article>
+      <article><b>04</b><h2>月轨交会对接</h2><p>低轨调相、霍曼转移、共轨接近和姿态对正。</p><a href="mission.html?level=4">进入第四关</a></article>
+      <article><b>05</b><h2>月面下降与着陆</h2><p>从环月轨道离轨，完成制动、接近、避障和垂直下降。</p><a href="mission.html?level=5">进入第五关</a></article>
+      <article><b>06</b><h2>月面活动</h2><p>出舱、月球车、采样、仪器部署和安全返回着陆器。</p><a href="mission.html?level=6">进入第六关</a></article>
+      <article><b>07</b><h2>月面起飞</h2><p>上升级分离、俯仰入轨、圆化和自动交会转移。</p><a href="mission.html?level=7">进入第七关</a></article>
+      <article><b>08</b><h2>月地返回</h2><p>月地转移点火、中途修正、再入、开伞和着陆。</p><a href="mission.html?level=8">进入第八关</a></article>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 250">
+  <defs><linearGradient id="metal"><stop stop-color="#60717e"/><stop offset=".25" stop-color="#edf4f7"/><stop offset=".55" stop-color="#fff"/><stop offset="1" stop-color="#6c808e"/></linearGradient><linearGradient id="body" x1="0" x2="1"><stop stop-color="#304d63"/><stop offset=".5" stop-color="#9fb3bf"/><stop offset="1" stop-color="#20394c"/></linearGradient><linearGradient id="panel"><stop stop-color="#071d4c"/><stop offset=".5" stop-color="#1672b4"/><stop offset="1" stop-color="#041638"/></linearGradient></defs>
+  <g stroke="#b8d8e8" stroke-opacity=".45" stroke-width="2">
+    <path d="M220 77h120l44 48-44 48H220z" fill="url(#body)"/>
+    <path d="M165 64c42 0 70 27 70 61s-28 61-70 61l-43-23V87z" fill="url(#metal)"/>
+    <path d="M123 87l-34 18v40l34 18z" fill="#657884"/>
+    <circle cx="87" cy="125" r="25" fill="#1c303e"/><circle cx="87" cy="125" r="15" fill="#020a10" stroke="#9ec7da"/>
+    <path d="M384 91h44v68h-44z" fill="#6e7b84"/><path d="M428 105h34v40h-34z" fill="#1b2d39"/>
+  </g>
+  <g fill="url(#panel)" stroke="#59b6df" stroke-width="2"><path d="M263 74V22H46v45z"/><path d="M263 176v52H46v-45z"/></g>
+  <g stroke="#78b4d1" stroke-opacity=".55"><path d="M90 24v41M134 24v39M178 24v38M222 24v37M90 186v40M134 188v38M178 189v37M222 190v36"/><path d="M48 45h211M48 205h211"/></g>
+  <ellipse cx="276" cy="101" rx="36" ry="10" fill="#fff" opacity=".18"/>
+</svg>

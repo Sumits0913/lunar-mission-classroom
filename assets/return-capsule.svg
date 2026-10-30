@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" role="img" aria-label="梦舟返回舱科普示意图">
+  <defs><linearGradient id="rc-shell" x1="0" x2="1"><stop stop-color="#596a75"/><stop offset=".28" stop-color="#e7edef"/><stop offset=".56" stop-color="#fff"/><stop offset="1" stop-color="#556873"/></linearGradient><linearGradient id="rc-window"><stop stop-color="#79cce8"/><stop offset=".45" stop-color="#204f68"/><stop offset="1" stop-color="#06131d"/></linearGradient><linearGradient id="rc-shield"><stop stop-color="#111315"/><stop offset=".5" stop-color="#674737"/><stop offset="1" stop-color="#141617"/></linearGradient></defs>
+  <path d="M180 30c-60 0-91 43-111 157h222C271 73 240 30 180 30z" fill="url(#rc-shell)" stroke="#31434e" stroke-width="5"/>
+  <path d="M69 187h222l28 49c-87 37-191 37-278 0z" fill="url(#rc-shield)" stroke="#120f0d" stroke-width="6"/>
+  <ellipse cx="180" cy="187" rx="112" ry="25" fill="#cbd4d8" opacity=".42"/>
+  <!-- 小尺寸舷窗，避免把返回舱画成卡通面孔 -->
+  <g fill="url(#rc-window)" stroke="#435b68" stroke-width="5"><path d="M112 113l35-8 6 25-37 7z"/><path d="M171 102h24v26h-24z"/><path d="M213 105l35 8-4 24-37-7z"/></g>
+  <path d="M96 163h168" stroke="#788b95" stroke-width="4" stroke-dasharray="8 7"/>
+  <path d="M83 211q97 31 194 0" fill="none" stroke="#d17d42" stroke-width="4" opacity=".65"/>
+  <text x="180" y="157" fill="#9aaab3" font-size="12" font-family="sans-serif" text-anchor="middle">梦舟返回舱</text>
+</svg>

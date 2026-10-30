@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" role="img" aria-label="揽月登月舱上升部分科普示意图">
+  <defs><linearGradient id="la-foil" x1="0" x2="1"><stop stop-color="#765019"/><stop offset=".24" stop-color="#f5d967"/><stop offset=".52" stop-color="#b77a24"/><stop offset=".78" stop-color="#ffe791"/><stop offset="1" stop-color="#694316"/></linearGradient><linearGradient id="la-metal" x1="0" x2="1"><stop stop-color="#53616a"/><stop offset=".42" stop-color="#e8eef0"/><stop offset=".72" stop-color="#89989f"/><stop offset="1" stop-color="#37464f"/></linearGradient><linearGradient id="la-panel"><stop stop-color="#06163e"/><stop offset=".5" stop-color="#176ca5"/><stop offset="1" stop-color="#061232"/></linearGradient></defs>
+  <g stroke="#1d2a31" stroke-width="3" stroke-linejoin="round">
+    <path d="M125 102h170l30 91-115 52-115-52z" fill="url(#la-foil)"/>
+    <path d="M151 35h118l31 70H120z" fill="url(#la-metal)"/>
+    <path d="M180 9h60l23 27H157z" fill="#dce5e8"/>
+    <circle cx="210" cy="12" r="22" fill="#22323d"/><circle cx="210" cy="12" r="12" fill="#02080d" stroke="#9ac0d1"/>
+    <path d="M180 214l-18 35h34zM240 214l18 35h-34z" fill="#272f34"/>
+  </g>
+  <g fill="url(#la-panel)" stroke="#4fafd6" stroke-width="2"><path d="M120 79L18 57v50l103 22z"/><path d="M300 79l102-22v50l-103 22z"/></g>
+  <g stroke="#73b8d4" stroke-opacity=".6"><path d="M50 65v50M84 72v49M336 72v49M370 65v50"/></g>
+</svg>

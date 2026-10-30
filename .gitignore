@@ -1,0 +1,12 @@
+# 构建产物与依赖（exe 走 Release 发布，不进仓库）
+node_modules/
+packaging/node_modules/
+packaging/dist/
+packaging/test-run*.log
+*.exe
+
+# 系统与编辑器垃圾
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
